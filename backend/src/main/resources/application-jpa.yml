@@ -1,0 +1,32 @@
+spring:
+  config:
+    activate:
+      on-profile: jpa
+  datasource:
+    url: jdbc:mysql://localhost:3306/tasksks
+    username: {username}
+    password: {password}
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    hikari:
+      maximum-pool-size: 10
+      connection-timeout: 30000
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+        dialect: org.hibernate.dialect.MySQLDialect
+  sql:
+    init:
+      mode: never
+
+logging:
+  level:
+    com.zaxxer.hikari: INFO
+    org.hibernate.sql: DEBUG
+
+jwt:
+  secret: {secret}
+  expiration-ms: 86400000

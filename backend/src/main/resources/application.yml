@@ -1,0 +1,16 @@
+spring:
+  profiles:
+    active: jpa
+
+logging:
+  level:
+    root: INFO
+    edu.bbte.idde.kkim2368: DEBUG
+    org.springframework.web: DEBUG
+    org.springframework.jdbc: DEBUG
+    com.zaxxer.hikari: INFO
+  pattern:
+    console: "%d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n"
+  file:
+    name: logs/application.log
+
