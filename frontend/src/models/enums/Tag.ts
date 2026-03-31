@@ -1,0 +1,8 @@
+export enum Tag {
+  WORK = 'WORK',
+  PERSONAL = 'PERSONAL',
+  SHOPPING = 'SHOPPING',
+  HEALTH = 'HEALTH',
+  STUDY = 'STUDY',
+  FAMILY = 'FAMILY',
+}
